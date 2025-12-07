@@ -13,7 +13,7 @@ descuentos_totales = descuento_afp + descuento_salud
 
 salario_neto = salario_bruto - descuentos_totales
 
-print(f"--- Cálculo de Salario ---")
+print(f"\nCálculo de Salario")
 print(f"Salario Base: ${salario_base:.2f}")
 print(f"Horas Extras (Ingreso): ${(horas_extras * pago_hora_extra):.2f}")
 print(f"Bono: ${bono:.2f}")

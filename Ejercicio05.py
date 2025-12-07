@@ -1,10 +1,9 @@
 def generar_matriz_espiral():
-    """Pide un número N >= 3 y genera una matriz NxN con números en espiral."""
     
     n = 0
     while n < 3:
         try:
-            n_input = input("Ingrese el número N (debe ser mayor o igual a 3): ")
+            n_input = input("\nIngrese el número N (debe ser mayor o igual a 3): ")
             n = int(n_input)
             if n < 3:
                 print("El número debe ser N >= 3. Intente de nuevo.")
@@ -48,7 +47,9 @@ def generar_matriz_espiral():
                 numero_actual += 1
             limite_izquierdo += 1
 
-    print(f"\n--- Matriz Espiral {n}x{n} ---")
+    print(f"\nMatriz Espiral {n}x{n}")
     ancho_maximo = len(str(total_celdas))
     for fila in matriz:
         print(" ".join(str(val).rjust(ancho_maximo) for val in fila))
+
+generar_matriz_espiral()
